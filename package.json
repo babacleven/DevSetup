@@ -1,0 +1,16 @@
+{
+  "name": "devsetup",
+  "version": "1.0.0",
+  "description": "Mon environnement de developpement",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["devsetup", "environment", "nodejs"],
+  "author": "babacleven",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

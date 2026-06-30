@@ -1,31 +1,77 @@
-# Terminal — Navigation et fichiers
+# Terminal - Commandes essentielles
 
-## Commandes de base
+Le terminal permet d'interagir avec l'ordinateur via des commandes textuelles. Voici les commandes indispensables pour un développeur.
+
+---
+
+## cd
+
+**Rôle :** Changer de dossier (Change Directory).
 
 ```bash
-pwd           # où suis-je ?
-ls            # liste des fichiers
-cd ..         # dossier parent
-mkdir projet  # créer un dossier
-touch test.js # créer un fichier
-rm fichier    # supprimer
-cat fichier   # voir le contenu
+cd Documents
+cd ..
 ```
 
-## PowerShell (Windows)
+- `cd Documents` : entre dans le dossier `Documents`.
+- `cd ..` : remonte d'un niveau.
 
-```powershell
-Get-ChildItem  # ls
-Set-Location   # cd
-New-Item       # mkdir / touch
-Remove-Item    # rm
-Get-Content    # cat
-Clear-Host     # clear
+---
+
+## dir (Windows) / ls
+
+**Rôle :** Afficher la liste des fichiers et dossiers.
+
+```bash
+dir
 ```
 
-## Ce que j'ai retenu
+Sous Linux et macOS, on utilise `ls` à la place.
 
-- `Tab` pour autocompléter — gain de temps énorme
-- Flèche haut pour revenir aux commandes récentes
-- `Ctrl+C` pour tuer un process bloqué
-- Tout est dans le terminal, pas besoin de souris
+---
+
+## mkdir
+
+**Rôle :** Créer un nouveau dossier (Make Directory).
+
+```bash
+mkdir mon-projet
+```
+
+Crée un dossier nommé `mon-projet` dans le répertoire courant.
+
+---
+
+## cls (Windows) / clear
+
+**Rôle :** Effacer l'affichage du terminal.
+
+```bash
+cls
+```
+
+Sous Linux et macOS, on utilise `clear`.
+
+---
+
+## tree
+
+**Rôle :** Afficher l'arborescence des dossiers et fichiers.
+
+```bash
+tree
+```
+
+Très utile pour visualiser la structure d'un projet directement dans le terminal.
+
+---
+
+## echo
+
+**Rôle :** Afficher un message dans le terminal.
+
+```bash
+echo "Hello, World!"
+```
+
+Souvent utilisé dans des scripts pour afficher des informations ou créer des fichiers avec la redirection (`echo "texte" > fichier.txt`).

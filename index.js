@@ -1,2 +1,1 @@
-const msg = 'DevSetup prêt — bon dev !';
-console.log(msg);
+console.log('DevSetup - Environnement de developpement pret');
